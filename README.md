@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prueba Técnica para Desarrollador Frontend con React
 
-## Getting Started
+El objetivo de esta prueba es evaluar tus habilidades como desarrollador Frontend trabajando con React, así como tu capacidad para utilizar una API pública, estructurar un proyecto, manejar estados, crear componentes reutilizables y desplegar una aplicación. Además, evaluaremos cómo implementas funcionalidades comunes como autenticación básica, manejo de datos dinámicos y diseño atractivo.
 
-First, run the development server:
+---
+
+## Requisitos de la Prueba
+
+### 1. Elegir una API Pública
+
+Puedes seleccionar cualquier API pública gratuita como base de datos para tu proyecto. Algunas sugerencias son:
+
+- [Rick and Morty API](https://rickandmortyapi.com/)
+- [Breaking Bad API](https://breakingbadapi.com/)
+- [PokeAPI](https://pokeapi.com/)
+- O cualquier otra API de tu elección.
+
+### 2. Crear un Proyecto con React
+
+- Utiliza **Create React App**, **Vite**, o cualquier otra herramienta de inicialización.
+- Debes usar **JavaScript** o **TypeScript** (a tu elección).
+
+---
+
+## Estructura del Proyecto
+
+El proyecto debe incluir al menos tres páginas principales:
+
+### Página de Login/Registro
+- Implementar un formulario básico de inicio de sesión y registro.
+- Manejar los datos de usuario de forma local (estado o `localStorage`).
+- Validaciones básicas en el formulario (campos requeridos, formato de email válido).
+
+### Página de Inicio (Home)
+- Mostrar datos obtenidos desde la API elegida.
+- Implementar una barra de búsqueda y filtros para los datos.
+- Mostrar imágenes y descripciones de los elementos.
+
+### Página de Creación/Edición
+- Crear un formulario para agregar o editar elementos.
+- Manejar los datos localmente (no es necesario enviar a la API).
+- Mostrar los elementos creados en la página de inicio o en un listado.
+
+---
+
+## Estilización
+
+- Utiliza **CSS puro**, **SASS**, **TailwindCSS** o librerías de estilos como **Material-UI** o **Bootstrap**.
+- El diseño debe ser claro y agradable a la vista.
+
+### Opcional: Despliegue
+- Despliega la aplicación en **Vercel**, **Netlify** o servicios similares.
+- Comparte el enlace de la aplicación desplegada.
+
+---
+
+## Tecnologías Requeridas
+
+- **React**: Librería principal para construir la aplicación.
+- **React Router**: Para la navegación entre páginas.
+- **Fetch** o **Axios**: Para realizar solicitudes HTTP a la API.
+
+### Manejo de Estado
+- Estado local usando `useState` y `useReducer`.
+- Opcional: Librerías como **Redux** o **Context API**.
+
+---
+
+## Instrucciones para Realizar la Prueba
+
+### Inicio del Proyecto
+Inicializa un proyecto de React con la herramienta de tu preferencia:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Usando Create React App
+npx create-react-app nombre-del-proyecto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# o con Vite
+npm create vite@latest nombre-del-proyecto -- --template react
