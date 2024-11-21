@@ -32,6 +32,7 @@ export default function Home() {
   // Obtener datos de los Pokémon
   const { resultsApi }: ResponseType = useGetListPokemon();
 
+
   const { resultsApiId }: ResponseTypeId = useGetTypePokemonId(idUrl);
 
   // Estado para el término de búsqueda
