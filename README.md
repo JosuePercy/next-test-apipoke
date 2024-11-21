@@ -12,7 +12,7 @@ Puedes seleccionar cualquier API pública gratuita como base de datos para tu pr
 
 - [Rick and Morty API](https://rickandmortyapi.com/)
 - [Breaking Bad API](https://breakingbadapi.com/)
-- [PokeAPI](https://pokeapi.com/)
+- [PokeAPI](https://pokeapi.co/)
 - O cualquier otra API de tu elección.
 
 ### 2. Crear un Proyecto con React
